@@ -1,0 +1,462 @@
+/****** GENERALT START ******/
+img {
+    width: 100%;
+
+}
+
+body {
+    margin: 0;
+    background-color: #093A82;
+}
+
+/*
+.backgroundbox {
+    background-color: #141414;
+    width: 90%;
+
+}
+*/
+
+html {
+    /*
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(90vh);
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+*/
+
+}
+
+#om,
+#video,
+#koncurrence,
+#faellesskab,
+#infografik {
+    /*    scroll-snap-align: start;*/
+    margin-top: 50px;
+    margin-right: 20px;
+
+
+}
+
+
+
+#infografik {
+
+    /*    scroll-snap-align: end;*/
+}
+
+
+
+
+p,
+ul,
+button {
+    margin: 0;
+    color: white;
+    font-family: myriad-pro-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: .8rem;
+
+
+}
+
+h1 {
+
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    color: #BEE0D9;
+    font-family: aileron, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+
+}
+
+ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col {
+    flex-grow: 1;
+    flex-basis: 600px;
+}
+
+
+
+
+
+/***** GENERALT SLUT *****/
+
+/***** MENU START*****/
+nav img {
+    width: 60%;
+    padding-left: 2vw;
+    padding-top: 2vw;
+}
+
+
+
+header {
+    background-color: #FAC177;
+    background-size: cover;
+    position: fixed;
+
+
+}
+
+nav {
+    height: 100vh;
+    width: 20vw;
+}
+
+.vertical {
+    writing-mode: horizontal-lr;
+    display: block;
+}
+
+/***** MENU SLUT ****/
+
+
+
+/***** MOBIL START *****/
+.splash_pic {
+    position: relative;
+}
+
+.splash_logo {
+    position: absolute;
+    width: 20%;
+    padding-top: 2vw;
+    padding-left: 1.5vw;
+}
+
+/*Mobil om sektion start */
+
+#om img {
+    position: relative;
+    width: 30%;
+    top: 5vw;
+    left: 18vw;
+
+}
+
+#om h1 {
+    padding-left: 45vw;
+    padding-top: 10vw;
+
+}
+
+#om p {
+    padding-left: 30vw;
+    padding-right: 5vw;
+    max-width: 300px;
+
+}
+
+
+/*Mobil om sektion slut */
+
+/*Mobil video sektion start */
+
+#video img {
+    position: relative;
+    width: 70%;
+    top: 5vw;
+    left: 18vw;
+
+}
+
+#video h1 {
+    padding-left: 45vw;
+    padding-top: 10vw;
+
+}
+
+/*
+#video p {
+    padding-left: 100px;
+    padding-right: 30px;
+
+}
+*/
+
+/*Mobil video sektion slut */
+
+/*Mobil koncurrence sektion start */
+
+#koncurrence img {
+    position: relative;
+    width: 70%;
+    top: 5vw;
+    left: 18vw;
+
+
+
+}
+
+#koncurrence h1 {
+    padding-left: 25vw;
+    padding-top: 5vw;
+}
+
+
+
+#koncurrence p {
+    padding-top: 2vw;
+    padding-left: 25vw;
+    padding-right: 5vw;
+    max-width: 300px;
+
+}
+
+#koncurrence button {}
+
+#koncurrence input {
+    margin-left: 25vw;
+    margin-top: 2vw;
+}
+
+#koncurrence button {
+    margin-top: 3vw;
+    color: white;
+    background-color: #fac177;
+    border-color: #fac177;
+    text-align: center;
+    margin-left: 25vw;
+    padding: 5px 10px 5px 10px;
+    display: block;
+}
+
+#koncurrence #question {
+    padding-top: 10vw;
+}
+
+
+
+ul {
+
+    padding-left: 30vw;
+    padding-right: 4vw;
+}
+
+
+/*Mobil koncurrence sektion slut */
+
+/*Mobil fællesskab sektion start */
+#faellesskab h1 {
+    padding-left: 50vw;
+    padding-top: 10vw;
+
+}
+
+#faellesskab p {
+    padding-top: 8vw;
+    padding-left: 40vw;
+    padding-right: 4vw;
+    max-width: 300px;
+
+}
+
+#faellesskab img {
+    position: relative;
+    width: 40%;
+    top: 5vw;
+    left: 18vw;
+    padding-top: 20px;
+}
+
+/*Mobil fællesskab sektion slut */
+
+/*Mobil infografik sektion start */
+
+#infografik h1 {
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#infografik p {
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 30px;
+
+}
+
+#infografik video {
+    position: relative;
+    width: 80%;
+    top: 5vw;
+    left: 18vw;
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+}
+
+/*Mobil infografik sektion slut */
+
+
+
+
+
+
+/***** MOBIL SLUT *****/
+
+/***** IPAD START *****/
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    p,
+    ul {
+        font-size: 1rem;
+    }
+
+    /*Ipad om sektion start */
+
+    #om img {
+        position: relative;
+        width: 30%;
+        top: 10vw;
+        left: 18vw;
+
+    }
+
+    #om h1 {
+        padding-left: 70vw;
+
+
+    }
+
+    #om p {
+        padding-left: 55vw;
+        padding-right: 6vw;
+
+    }
+
+
+    /*Ipad om sektion slut */
+
+    /*Ipad video sektion start */
+    #video,
+    #koncurrence,
+    #faellesskab,
+    #infografik {
+        margin-top: 25vw;
+        margin-bottom: 20vw;
+    }
+
+
+    /*Ipad video sektion slut */
+
+    /*Ipad koncurrence sektion start */
+
+    #koncurrence img {
+        width: 60%;
+    }
+
+
+    #koncurrence #question {
+        margin-top: 6vw;
+
+    }
+
+
+    /*Ipad koncurrence sektion slut */
+
+    /*Ipad fællesskab sektion start */
+    #faellesskab h1 {
+        padding-left: 60vw;
+    }
+
+    #faellesskab p {
+
+
+        padding-top: 10vw;
+
+        padding-left: 15vw;
+
+
+
+
+        z-index: 2;
+
+    }
+
+    #faellesskab img {
+        position: relative;
+        width: 80%;
+        top: 5vw;
+        left: 18vw;
+        padding-top: 20px;
+
+    }
+
+    #faellesskab .b2 {
+        padding-top: 150px;
+    }
+
+
+    #faellesskab .col {
+        flex-grow: 1;
+        flex-basis: 300px;
+    }
+
+    /*Ipad fællesskab sektion slut */
+
+    /*Ipad infografik sektion start */
+
+    #infografik h1 {
+        padding-left: 200px;
+        padding-top: 50px;
+    }
+
+    #infografik p {
+        padding-top: 40px;
+        padding-left: 200px;
+        padding-right: 30px;
+
+    }
+
+    #infografik video {
+        position: relative;
+        width: 80%;
+        top: 5vw;
+        left: 18vw;
+        padding-top: 20px;
+        padding-bottom: 100px;
+
+    }
+
+    /*Ipad infografik sektion slut */
+}
+
+/***** IPAD SLUT *****/
+
+/***** IPAD PRO START *****/
+@media only screen and (min-device-width : 1024px) and (max-device-width: 1366px) {
+
+
+
+
+    /***** IPAD PRO SLUT *****/
+
+    /***** WEB START *****/
+    @media only screen and (min-device-width : 1366px) {
+
+
+
+        /*****WEB SLUT *****/
