@@ -9,13 +9,6 @@ body {
     background-color: #093A82;
 }
 
-/*
-.backgroundbox {
-    background-color: #141414;
-    width: 90%;
-
-}
-*/
 
 html {
     /*
@@ -89,7 +82,7 @@ ul {
 
 .col {
     flex-grow: 1;
-    flex-basis: 600px;
+    flex-basis: 300px;
 }
 
 
@@ -101,7 +94,7 @@ ul {
 /***** MENU START*****/
 nav img {
     width: 60%;
-    padding-left: 2vw;
+    padding-left: 4vw;
     padding-top: 2vw;
 }
 
@@ -146,7 +139,7 @@ nav {
 #om img {
     position: relative;
     width: 30%;
-    top: 5vw;
+    top: 0vw;
     left: 18vw;
 
 }
@@ -183,30 +176,21 @@ nav {
 
 }
 
-/*
-#video p {
-    padding-left: 100px;
-    padding-right: 30px;
-
-}
-*/
-
 /*Mobil video sektion slut */
 
 /*Mobil koncurrence sektion start */
 
 #koncurrence img {
     position: relative;
-    width: 70%;
+    width: 30%;
     top: 5vw;
     left: 18vw;
-
 
 
 }
 
 #koncurrence h1 {
-    padding-left: 25vw;
+    padding-left: 30vw;
     padding-top: 5vw;
 }
 
@@ -214,7 +198,7 @@ nav {
 
 #koncurrence p {
     padding-top: 2vw;
-    padding-left: 25vw;
+    padding-left: 30vw;
     padding-right: 5vw;
     max-width: 300px;
 
@@ -223,7 +207,7 @@ nav {
 #koncurrence button {}
 
 #koncurrence input {
-    margin-left: 25vw;
+    margin-left: 30vw;
     margin-top: 2vw;
 }
 
@@ -233,7 +217,7 @@ nav {
     background-color: #fac177;
     border-color: #fac177;
     text-align: center;
-    margin-left: 25vw;
+    margin-left: 30vw;
     padding: 5px 10px 5px 10px;
     display: block;
 }
@@ -246,7 +230,7 @@ nav {
 
 ul {
 
-    padding-left: 30vw;
+    padding-left: 35vw;
     padding-right: 4vw;
 }
 
@@ -262,9 +246,10 @@ ul {
 
 #faellesskab p {
     padding-top: 8vw;
-    padding-left: 40vw;
+    padding-left: 30vw;
     padding-right: 4vw;
     max-width: 300px;
+
 
 }
 
@@ -281,8 +266,9 @@ ul {
 /*Mobil infografik sektion start */
 
 #infografik h1 {
-    padding-left: 100px;
-    padding-top: 50px;
+
+    padding-top: 2vw;
+    padding-left: 30vw;
 }
 
 #infografik p {
@@ -314,7 +300,7 @@ ul {
 /***** IPAD START *****/
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+@media only screen and (min-device-width : 712px) and (max-device-width : 913px) {
 
     h1 {
         font-size: 1.3rem;
@@ -322,28 +308,33 @@ ul {
 
     p,
     ul {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     /*Ipad om sektion start */
 
     #om img {
-        position: relative;
-        width: 30%;
-        top: 10vw;
-        left: 18vw;
+        width: 50%;
+        top: 0vw;
+
 
     }
 
     #om h1 {
-        padding-left: 70vw;
-
+        padding-left: 7vw;
+        padding-top: 10vw;
 
     }
 
     #om p {
+        /*
         padding-left: 55vw;
         padding-right: 6vw;
+*/
+        padding-top: 5vw;
+        padding-left: 7vw;
+        padding-right: 0vw;
+        max-width: 250px;
 
     }
 
@@ -356,22 +347,58 @@ ul {
     #faellesskab,
     #infografik {
         margin-top: 25vw;
-        margin-bottom: 20vw;
+        margin-bottom: 10vw;
     }
 
+    #video h1 {
+        padding-left: 50vw;
+        padding-top: 10vw;
+    }
 
     /*Ipad video sektion slut */
 
     /*Ipad koncurrence sektion start */
 
     #koncurrence img {
-        width: 60%;
+        width: 50%;
     }
 
 
     #koncurrence #question {
-        margin-top: 6vw;
+        margin-top: 3vw;
+        padding: 0;
+        padding-right: 0;
 
+
+
+    }
+
+    #koncurrence ul {
+        padding-left: 5.5vw;
+        text-align: end;
+        padding-right: 10vw;
+    }
+
+    #koncurrence p {
+        padding-left: 0;
+        margin-left: 0;
+        text-align: end;
+        padding-right: 10vw;
+    }
+
+    #koncurrence input {
+        margin-left: 16vw;
+        margin-right: 10vw;
+
+    }
+
+    #koncurrence button {
+        margin-left: 21.5vw;
+
+    }
+
+    #koncurrence .right {
+        padding-left: 15vw;
     }
 
 
@@ -379,20 +406,14 @@ ul {
 
     /*Ipad fællesskab sektion start */
     #faellesskab h1 {
-        padding-left: 60vw;
+        padding-left: 55vw;
     }
 
     #faellesskab p {
-
-
         padding-top: 10vw;
-
         padding-left: 15vw;
-
-
-
-
-        z-index: 2;
+        padding-right: 10vw;
+        text-align: end;
 
     }
 
@@ -401,16 +422,17 @@ ul {
         width: 80%;
         top: 5vw;
         left: 18vw;
-        padding-top: 20px;
+
 
     }
 
     #faellesskab .b2 {
-        padding-top: 150px;
+        padding-top: 15vw;
     }
 
 
-    #faellesskab .col {
+    #faellesskab .col,
+    #om .col {
         flex-grow: 1;
         flex-basis: 300px;
     }
@@ -420,25 +442,12 @@ ul {
     /*Ipad infografik sektion start */
 
     #infografik h1 {
-        padding-left: 200px;
-        padding-top: 50px;
-    }
-
-    #infografik p {
-        padding-top: 40px;
-        padding-left: 200px;
-        padding-right: 30px;
+        padding-left: 25vw;
 
     }
 
     #infografik video {
-        position: relative;
-        width: 80%;
-        top: 5vw;
-        left: 18vw;
-        padding-top: 20px;
-        padding-bottom: 100px;
-
+        width: 75%;
     }
 
     /*Ipad infografik sektion slut */
@@ -447,16 +456,104 @@ ul {
 /***** IPAD SLUT *****/
 
 /***** IPAD PRO START *****/
-@media only screen and (min-device-width : 1024px) and (max-device-width: 1366px) {
+@media only screen and (min-device-width : 913px) and (max-device-width: 1366px) {
+    h1 {
+        font-size: 1.5rem;
+    }
 
 
+    /*Ipad pro SPLASH sektion start*/
+
+
+    /*Ipad pro SPLASH sektion slut*/
+
+    /*Ipad pro OM sektion start*/
+    #om img {
+        width: 60%;
+    }
+
+    #om h1 {
+        padding-top: 30vw;
+        padding-left: 10vw;
+
+    }
+
+    #om p {
+        padding-left: 10vw;
+        padding-right: 5vw;
+    }
+
+    /*Ipad pro OM sektion slut*/
+
+    /*Ipad pro VIDEO sektion start*/
+    #video h1 {
+        padding-left: 55vw;
+    }
+
+    /*Ipad pro VIDEO sektion slut*/
+
+    /*Ipad pro KONCURRENCE sektion start*/
+    #koncurrence img {
+        width: 50%;
+    }
+
+    #koncurrence p {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: end;
+    }
+
+    #koncurrence ul {
+        padding-left: 0;
+        padding-right: 15vw;
+        text-align: end;
+    }
+
+    #koncurrence input {
+        margin-left: 23vw;
+    }
+
+    #koncurrence button {
+        margin-left: 27.5vw;
+    }
+
+    /*Ipad pro KONCURRENCE sektion slut*/
+
+    /*Ipad pro FÆLLESSKAB sektion start*/
+    #faellesskab .col {
+        flex-grow: 1;
+        flex-basis: 400px;
+    }
+
+    #faellesskab img {
+        width: 70%;
+    }
+
+    #faellesskab h1 {
+        padding-left: 66vw;
+        padding-right: 15vw;
+    }
+
+    #faellesskab p {
+        padding-left: 10vw;
+        padding-right: 16vw;
+    }
+
+    /*Ipad pro FÆLLESSKAB sektion slut*/
+
+    /*Ipad pro INFOGRAFIK sektion start*/
+    #infografik h1 {
+        margin-top: 10vw;
+    }
+
+    /*Ipad pro INFOGRAFIK sektion slut*/
 
 
     /***** IPAD PRO SLUT *****/
 
     /***** WEB START *****/
-    @media only screen and (min-device-width : 1366px) {
+    /*    @media only screen and (min-device-width : 1366px) {*/
 
 
 
-        /*****WEB SLUT *****/
+    /*****WEB SLUT *****/
