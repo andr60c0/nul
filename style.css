@@ -26,8 +26,8 @@ html {
 #faellesskab,
 #infografik {
     /*    scroll-snap-align: start;*/
-    margin-top: 50px;
-    margin-right: 20px;
+    margin-top: 5vw;
+    margin-right: 2vw;
 
 
 }
@@ -123,9 +123,7 @@ nav {
 
 
 /***** MOBIL START *****/
-.splash_pic {
-    position: relative;
-}
+
 
 .splash_logo {
     position: absolute;
@@ -447,7 +445,7 @@ ul {
     }
 
     #infografik video {
-        width: 75%;
+        width: 70%;
     }
 
     /*Ipad infografik sektion slut */
@@ -456,7 +454,7 @@ ul {
 /***** IPAD SLUT *****/
 
 /***** IPAD PRO START *****/
-@media only screen and (min-device-width : 913px) and (max-device-width: 1366px) {
+@media only screen and (min-device-width : 913px) and (max-device-width: 1223px) {
     h1 {
         font-size: 1.5rem;
     }
@@ -523,6 +521,7 @@ ul {
     #faellesskab .col {
         flex-grow: 1;
         flex-basis: 400px;
+        padding-top: 0vw;
     }
 
     #faellesskab img {
@@ -546,14 +545,133 @@ ul {
         margin-top: 10vw;
     }
 
+    #infografik video {
+        width: 70%;
+    }
+
     /*Ipad pro INFOGRAFIK sektion slut*/
 
 
     /***** IPAD PRO SLUT *****/
+}
 
-    /***** WEB START *****/
-    /*    @media only screen and (min-device-width : 1366px) {*/
+/***** WEB START *****/
+@media only screen and (min-device-width : 1224px) {
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p,
+    ul,
+    button {
+        font-size: 1rem;
+    }
+
+    /*Web SPLASH sektion start*/
+
+    #splash .splash_pic {
+
+        left: 5vw;
+    }
+
+    /*Web SPLASH sektion slut*/
+
+
+    /*Web OM sektion start */
+    #om img {
+        width: 45%;
+    }
+
+    #om h1 {
+        padding-left: 8vw;
+        padding-top: 15vw;
+    }
+
+    #om p {
+
+        padding-left: 8vw;
+        padding-right: 22vw;
+    }
+
+    /*Web OM sektion slut */
+
+    /*Web VIDEO sektion start */
+    #video img {
+        width: 60%;
+    }
+
+    #video h1 {
+        padding-left: 50vw;
+    }
+
+    /*Web VIDEO sektion slut */
+
+    /*Web KONCURRENCE sektion start */
+    #koncurrence h1 {
+        padding-left: 25vw;
+    }
+
+    #koncurrence p {
+        padding-top: 0;
+        padding-left: 5vw;
+        text-align: end;
+    }
+
+    #koncurrence ul {
+        padding-left: 0vw;
+        padding-right: 23vw;
+        text-align: end;
+    }
+
+    #koncurrence input {
+        margin-left: 18.5vw;
+
+    }
+
+    #koncurrence button {
+        margin-left: 21vw;
+    }
+
+    /*Web KONCURRENCE sektion slut */
+
+    /*Web FÆLLESSKAB sektion start */
+    #faellesskab .col {
+        flex-grow: 1;
+        flex-basis: 600px;
+    }
+
+    #faellesskab img {
+        width: 40%;
+    }
+
+    #faellesskab h1 {
+        padding-left: 55vw;
+    }
+
+    #faellesskab p {
+        padding-left: 7vw;
+    }
+
+    /*Web FÆLLESSKAB sektion slut */
+
+    /*Web INFOGRAFIK sektion start */
+
+    #infografik h1 {
+        margin-top: 10vw;
+        padding-left: 25vw;
+
+    }
+
+    #infografik video {
+        width: 60%;
+    }
+
+    /*Web INFOGRAFIK sektion slut */
+
+}
 
 
 
-    /*****WEB SLUT *****/
+
+/*****WEB SLUT *****/
