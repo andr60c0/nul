@@ -2,22 +2,36 @@
 img {
     width: 100%;
 
+
 }
 
 body {
     margin: 0;
     background-color: #093A82;
+
+
 }
 
 
 html {
+
     /*
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(90vh);
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 */
+    scroll-behavior: smooth;
 
+
+}
+
+nav img,
+#om img,
+#video img,
+#koncurrence img,
+#faellesskab img,
+#infografik img {
+    filter: drop-shadow(4px 4px 2px #1C1E1F);
 }
 
 #om,
@@ -31,7 +45,6 @@ html {
 
 
 }
-
 
 
 #infografik {
@@ -51,6 +64,7 @@ button {
     font-style: normal;
     font-weight: 200;
     font-size: .8rem;
+    filter: drop-shadow(2px 2px 2px #1C1E1F);
 
 
 }
@@ -64,6 +78,8 @@ h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 1.2rem;
+    filter: drop-shadow(8px 8px 4px #1C1E1F);
+
 
 
 }
@@ -71,6 +87,7 @@ h1 {
 ul {
     margin-top: 20px;
     margin-bottom: 20px;
+    list-style-type: none;
 }
 
 
@@ -94,10 +111,20 @@ ul {
 /***** MENU START*****/
 nav img {
     width: 60%;
-    padding-left: 4vw;
+    padding-left: 1vw;
     padding-top: 2vw;
 }
 
+nav .social {
+    width: 15%;
+    padding-top: 2vw;
+    padding-left: 2vw;
+}
+
+nav p {
+    padding-top: 21vw;
+    padding-left: 1vw;
+}
 
 
 header {
@@ -111,6 +138,11 @@ header {
 nav {
     height: 100vh;
     width: 20vw;
+}
+
+nav h1 {
+    padding-top: 25vw;
+    padding-left: 4vw;
 }
 
 .vertical {
@@ -565,7 +597,8 @@ ul {
     p,
     ul,
     button {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        max-width: 400px;
     }
 
     /*Web SPLASH sektion start*/
@@ -584,14 +617,16 @@ ul {
     }
 
     #om h1 {
-        padding-left: 8vw;
+        padding-left: 5vw;
         padding-top: 15vw;
     }
 
     #om p {
 
-        padding-left: 8vw;
-        padding-right: 22vw;
+        padding-left: 5vw;
+        padding-right: 0vw;
+        margin-right: 0;
+        max-width: 330px;
     }
 
     /*Web OM sektion slut */
@@ -631,6 +666,15 @@ ul {
 
     #koncurrence button {
         margin-left: 21vw;
+    }
+
+    #koncurrence .email,
+    #koncurrence .answer {
+        padding-top: 1vw
+    }
+
+    #koncurrence #question {
+        padding-top: 2vw;
     }
 
     /*Web KONCURRENCE sektion slut */

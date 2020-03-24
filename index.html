@@ -12,6 +12,10 @@
     <header class="vertical">
         <nav>
             <img src="billeder/tuborgnullogo.png" alt="tuborgnullogo">
+            <p>Følg os på sociale medier!</p>
+            <img class="social" src="billeder/facebook.svg" alt="facebooklogo">
+            <img class="social" src="billeder/instagram.svg" alt="instagram">
+
 
         </nav>
 
@@ -39,7 +43,7 @@
         <div class="sectionwrapper">
             <div class="col">
 
-                <img src="billeder/beer.png" alt="ølbillede">
+                <img id="om_img" src="billeder/beer.png" alt="ølbillede">
             </div>
             <div class="col">
                 <h1><i>´Nul worries<br>...stadig Tuborg´</i></h1>
@@ -54,7 +58,7 @@
         <h1><i>´Alle skal ha´ lov til en pilsner!´</i></h1>
         <div class="sectionwrapper">
             <div class="col">
-                <img src="billeder/kampagnevideo.png" alt="kampagnevideo">
+                <img class="video_pic" src="billeder/kampagnevideo.png" alt="kampagnevideo">
 
             </div>
 
@@ -65,7 +69,7 @@
         <div class="sectionwrapper">
 
             <div class="col">
-                <img src="billeder/tower.png" alt="ramme">
+                <img class="koncurrence_pic" src="billeder/tower.png" alt="ramme">
             </div>
             <div class="col right">
                 <div id="question">
@@ -92,13 +96,13 @@
     <section id="faellesskab">
         <div class="sectionwrapper">
             <h1><i>´Tilslut dig fællesskabet!´</i></h1>
-            <div class="col">
+            <div class="col f_b1">
                 <img id="b1" src="billeder/roskilde.png" alt="roskildebillede">
             </div>
-            <div class="col">
+            <div class="col ">
                 <p>Tuborg NUL bidrager med sin fremmarch på det danske ølmarked en ånd af fælleskab og en berusende tilstedeværelse - både i hjemmet, på klubben og til fyraften.</p>
             </div>
-            <div class="col b2">
+            <div class="col b2 f_b2">
                 <img src="billeder/tnul-insta.png" alt="tuborgøl">
             </div>
             <div class="col b2">
@@ -111,7 +115,7 @@
         <div class="col">
 
 
-            <video>
+            <video playsinline autoplay muted loop class="video">
                 <source src="billeder/infografik.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -120,8 +124,15 @@
 
     </section>
     <footer></footer>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js
+"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js
+"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="scroll.js"></script>
     <script src="quiz.js"></script>
+
 </body>
 
 </html>
