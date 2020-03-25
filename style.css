@@ -193,6 +193,14 @@ nav h1 {
 
 
 /***** MOBIL START *****/
+/*Mobil Splash sektion start */
+#splash p {
+    left: 63vw;
+    top: 38vw;
+    position: absolute;
+}
+
+/*Mobil Splash sektion slut */
 
 
 
@@ -838,7 +846,7 @@ ul {
     /*Web FÆLLESSKAB sektion start */
     #faellesskab .col {
         flex-grow: 1;
-        flex-basis: 800px;
+        flex-basis: 600px;
     }
 
     #faellesskab img {
