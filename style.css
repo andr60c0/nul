@@ -16,11 +16,13 @@ body {
 html {
 
 
+    /*
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(90vh);
     scroll-snap-type: y proximity;
 
     scroll-behavior: smooth;
+*/
 
 
 }
@@ -30,8 +32,9 @@ html {
 #video img,
 #koncurrence img,
 #faellesskab img,
-#infografik img {
-    filter: drop-shadow(4px 4px 2px #1C1E1F);
+#infografik img,
+video {
+    filter: drop-shadow(2px 2px 14px #1C1E1F);
 }
 
 #om,
@@ -47,7 +50,7 @@ html {
 }
 
 section {
-    scroll-snap-align: start;
+    /*    scroll-snap-align: start;*/
 }
 
 
@@ -68,12 +71,25 @@ button {
     font-style: normal;
     font-weight: 200;
     font-size: .8rem;
-    filter: drop-shadow(2px 2px 2px #1C1E1F);
+    filter: drop-shadow(2px 2px 14px #1C1E1F);
+
+
 
 
 }
 
-h1 {
+a {
+    margin: 0;
+    color: white;
+    font-family: myriad-pro-condensed, sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: .8rem;
+
+}
+
+h1,
+h2 {
 
     margin: 0;
     padding: 20px 0px 20px 0px;
@@ -82,7 +98,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 1.2rem;
-    filter: drop-shadow(4px 4px 2px #1C1E1F);
+    filter: drop-shadow(2px 2px 10px #1C1E1F);
 
 
 
@@ -95,7 +111,10 @@ ul {
 }
 
 
-.sectionwrapper {
+#om .sectionwrapper,
+#video .sectionwrapper,
+#koncurrence .sectionwrapper,
+#faellesskab .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
 
@@ -103,7 +122,7 @@ ul {
 
 .col {
     flex-grow: 1;
-    flex-basis: 300px;
+    flex-basis: 400px;
 }
 
 
@@ -113,22 +132,38 @@ ul {
 /***** GENERALT SLUT *****/
 
 /***** MENU START*****/
+a {
+    display: block;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    text-decoration: none;
+    margin-bottom: 2vw;
+}
+
+a:hover {
+    color: #093A82;
+
+}
+
 nav img {
     width: 60%;
-    padding-left: 1vw;
+    padding-left: 4vw;
     padding-top: 2vw;
 }
 
 nav .social {
-    width: 15%;
-    padding-top: 2vw;
+    width: 30%;
+    padding-top: 5vw;
     padding-left: 2vw;
 }
 
 nav p {
-    padding-top: 100vw;
+    padding-top: 115vw;
     /*    padding-top: 21vw;*/
     padding-left: 1vw;
+    font-weight: 600;
+    font-size: .7rem;
+    filter: drop-shadow(0px 0px 0px #1C1E1F);
 }
 
 
@@ -136,8 +171,6 @@ header {
     background-color: #FAC177;
     background-size: cover;
     position: fixed;
-
-
 }
 
 nav {
@@ -164,16 +197,6 @@ nav h1 {
 
 
 
-#splash h1 {
-    text-align: end;
-    position: absolute;
-    top: 10vw;
-    left: 50%;
-    color: white;
-    font-size: 2rem;
-    padding-right: 4vw;
-}
-
 /*Mobil om sektion start */
 
 #om img {
@@ -192,7 +215,7 @@ nav h1 {
 
 #om p {
     padding-left: 30vw;
-    padding-right: 5vw;
+    padding-right: 10vw;
     max-width: 300px;
 
 }
@@ -211,8 +234,9 @@ nav h1 {
 }
 
 #video h1 {
-    padding-left: 45vw;
+    padding-left: 35vw;
     padding-top: 10vw;
+
 
 }
 
@@ -230,7 +254,7 @@ nav h1 {
 }
 
 #koncurrence h1 {
-    padding-left: 30vw;
+    padding-left: 40vw;
     padding-top: 5vw;
 }
 
@@ -239,7 +263,7 @@ nav h1 {
 #koncurrence p {
     padding-top: 2vw;
     padding-left: 30vw;
-    padding-right: 5vw;
+    padding-right: 10vw;
     max-width: 300px;
 
 }
@@ -281,13 +305,20 @@ ul {
 #faellesskab h1 {
     padding-left: 50vw;
     padding-top: 10vw;
+    padding-right: 10vw;
 
+}
+
+#faellesskab h2 {
+    padding-top: 10vw;
+    padding-left: 30vw;
+    padding-right: 10vw;
 }
 
 #faellesskab p {
     padding-top: 8vw;
     padding-left: 30vw;
-    padding-right: 4vw;
+    padding-right: 10vw;
     max-width: 300px;
 
 
@@ -311,21 +342,22 @@ ul {
     padding-left: 30vw;
 }
 
-#infografik p {
-    padding-top: 40px;
-    padding-left: 100px;
-    padding-right: 30px;
 
-}
 
 #infografik video {
     position: relative;
-    width: 80%;
+    width: 70%;
     top: 5vw;
     left: 18vw;
     padding-top: 20px;
     padding-bottom: 100px;
 
+}
+
+#infografik p {
+    padding-left: 25vw;
+    padding-right: 15vw;
+    padding-bottom: 10vw;
 }
 
 /*Mobil infografik sektion slut */
@@ -342,20 +374,37 @@ ul {
 
 @media only screen and (min-width : 612px) and (max-width : 913px) {
 
-    h1 {
-        font-size: 1.3rem;
+    h1,
+    h2 {
+        font-size: 2rem;
     }
 
     p,
     ul {
-        font-size: .8rem;
+        font-size: 1rem;
+    }
+
+    a {
+
+        padding-left: 3vw;
+        font-size: 1.3rem;
+
+    }
+
+    nav .social {
+        width: 25%;
+        padding-top: 5vw;
+        padding-left: 3vw;
     }
 
     nav p {
-        padding-top: 70vw;
+        padding-top: 90vw;
         /*    padding-top: 21vw;*/
-        padding-left: 1vw;
+        padding-left: 2vw;
+
+        font-size: 1.3rem;
     }
+
 
     #splash h1 {
 
@@ -366,7 +415,7 @@ ul {
     /*Ipad om sektion start */
 
     #om img {
-        width: 50%;
+        width: 65%;
         top: 0vw;
 
 
@@ -403,7 +452,7 @@ ul {
     }
 
     #video h1 {
-        padding-left: 50vw;
+        padding-left: 45vw;
         padding-top: 10vw;
     }
 
@@ -425,27 +474,33 @@ ul {
 
     }
 
+    #koncurrence h1 {
+        padding-left: 25vw;
+    }
+
+
+
     #koncurrence ul {
         padding-left: 5.5vw;
         text-align: end;
-        padding-right: 10vw;
+        padding-right: 12vw;
     }
 
     #koncurrence p {
         padding-left: 0;
         margin-left: 0;
         text-align: end;
-        padding-right: 10vw;
+        padding-right: 12vw;
     }
 
     #koncurrence input {
         margin-left: 16vw;
-        margin-right: 10vw;
+        margin-right: 13vw;
 
     }
 
     #koncurrence button {
-        margin-left: 21.5vw;
+        margin-left: 22vw;
 
     }
 
@@ -458,35 +513,41 @@ ul {
 
     /*Ipad fællesskab sektion start */
     #faellesskab h1 {
-        padding-left: 55vw;
+        padding-left: 25vw;
+        padding-top: 0;
     }
 
+    #faellesskab h2 {
+        padding-left: 70vw;
+        max-width: 150px;
+        font-size: 2rem;
+    }
+
+
     #faellesskab p {
-        padding-top: 10vw;
-        padding-left: 15vw;
+        padding-top: 0;
+        padding-left: 65vw;
         padding-right: 10vw;
-        text-align: end;
+        text-align: start;
+        max-width: 200px;
 
     }
 
     #faellesskab img {
         position: relative;
-        width: 80%;
+        width: 40%;
         top: 5vw;
         left: 18vw;
 
 
     }
 
-    #faellesskab .b2 {
-        padding-top: 15vw;
-    }
 
 
-    #faellesskab .col,
-    #om .col {
+
+    #faellesskab .col {
         flex-grow: 1;
-        flex-basis: 300px;
+        flex-basis: 400px;
     }
 
     /*Ipad fællesskab sektion slut */
@@ -509,8 +570,39 @@ ul {
 
 /***** IPAD PRO START *****/
 @media only screen and (min-width : 913px) and (max-width: 1223px) {
-    h1 {
+
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    p,
+    ul,
+    button {
+        font-size: 1.2rem;
+    }
+
+    a {
+
+        padding-left: 3vw;
         font-size: 1.5rem;
+        margin-bottom: 2vw;
+
+    }
+
+    nav .social {
+        width: 25%;
+        padding-top: 5vw;
+        padding-left: 3vw;
+    }
+
+    nav p {
+        padding-top: 93vw;
+        /*    padding-top: 21vw;*/
+        padding-left: 2vw;
+
+        font-size: 1.6rem;
+        font-weight: 600;
     }
 
 
@@ -525,7 +617,7 @@ ul {
     }
 
     #om h1 {
-        padding-top: 30vw;
+        padding-top: 15vw;
         padding-left: 10vw;
 
     }
@@ -539,14 +631,22 @@ ul {
 
     /*Ipad pro VIDEO sektion start*/
     #video h1 {
-        padding-left: 55vw;
+        padding-left: 44vw;
     }
 
     /*Ipad pro VIDEO sektion slut*/
 
     /*Ipad pro KONCURRENCE sektion start*/
+    #koncurrence h1 {
+        padding-left: 25vw;
+    }
+
     #koncurrence img {
         width: 50%;
+    }
+
+    #koncurrence #question {
+        padding-top: 5vw;
     }
 
     #koncurrence p {
@@ -566,7 +666,7 @@ ul {
     }
 
     #koncurrence button {
-        margin-left: 27.5vw;
+        margin-left: 25.5vw;
     }
 
     /*Ipad pro KONCURRENCE sektion slut*/
@@ -587,9 +687,18 @@ ul {
         padding-right: 15vw;
     }
 
-    #faellesskab p {
+    #faellesskab h2 {
         padding-left: 10vw;
-        padding-right: 16vw;
+        padding-right: 10vw;
+        padding-top: 20vw;
+    }
+
+    #faellesskab p {
+        padding-left: 18vw;
+        padding-right: 10vw;
+        padding-top: 15vw;
+        text-align: start;
+        max-width: 200px;
     }
 
     /*Ipad pro FÆLLESSKAB sektion slut*/
@@ -612,16 +721,41 @@ ul {
 /***** WEB START *****/
 @media only screen and (min-width : 1224px) {
 
-    h1 {
-        font-size: 1.7rem;
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    a {
+
+        padding-left: 4vw;
+        font-size: 1.5rem;
+        margin-bottom: 2vw;
+
     }
 
     p,
     ul,
     button {
         font-size: 1.2rem;
-        max-width: 400px;
+        max-width: 700px;
     }
+
+    nav .social {
+        width: 15%;
+        padding-top: 3vw;
+        padding-left: 4vw;
+    }
+
+    nav p {
+        padding-top: 13vw;
+        /*    padding-top: 21vw;*/
+        padding-left: 4vw;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+
 
     /*Web SPLASH sektion start*/
 
@@ -640,7 +774,7 @@ ul {
 
     #om h1 {
         padding-left: 5vw;
-        padding-top: 15vw;
+        padding-top: 10vw;
     }
 
     #om p {
@@ -659,7 +793,7 @@ ul {
     }
 
     #video h1 {
-        padding-left: 50vw;
+        padding-left: 46vw;
     }
 
     /*Web VIDEO sektion slut */
@@ -704,19 +838,24 @@ ul {
     /*Web FÆLLESSKAB sektion start */
     #faellesskab .col {
         flex-grow: 1;
-        flex-basis: 600px;
+        flex-basis: 800px;
     }
 
     #faellesskab img {
-        width: 40%;
+        width: 50%;
     }
 
     #faellesskab h1 {
-        padding-left: 55vw;
+        padding-left: 25vw;
+    }
+
+    #faellesskab h2 {
+        padding-top: 15vw;
+        padding-left: 0vw;
     }
 
     #faellesskab p {
-        padding-left: 7vw;
+        padding-left: 0vw;
     }
 
     /*Web FÆLLESSKAB sektion slut */

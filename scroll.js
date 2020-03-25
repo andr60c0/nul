@@ -39,7 +39,7 @@ tl5.from(".f_b2", 1, {
 tl6.from(".video", 1, {
     x: -100,
     opacity: 0
-})
+}, "=-10")
 
 const controller = new ScrollMagic.Controller();
 
@@ -93,7 +93,7 @@ const scene5 = new ScrollMagic.Scene({
 
 //INFOGRAFIK SEKTION
 const scene6 = new ScrollMagic.Scene({
-        triggerElement: "#infografik"
+        triggerElement: ".b2"
 
     })
 
