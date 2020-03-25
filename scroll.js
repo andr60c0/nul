@@ -4,7 +4,7 @@ var tl3 = new TimelineMax({});
 var tl4 = new TimelineMax({});
 var tl5 = new TimelineMax({});
 var tl6 = new TimelineMax({});
-const controller = new ScrollMagic.Controller();
+
 
 
 
@@ -34,12 +34,15 @@ tl4.from("#b1", 1, {
 tl5.from(".f_b2", 1, {
     x: -100,
     opacity: 0
-})
+}, "=-2")
 
-tl6.from("video", 1, {
+tl6.from(".video", 1, {
     x: -100,
     opacity: 0
 })
+
+const controller = new ScrollMagic.Controller();
+
 //OM sektion
 const scene = new ScrollMagic.Scene({
         triggerElement: "#om"
@@ -70,6 +73,8 @@ const scene3 = new ScrollMagic.Scene({
     .setTween(tl3)
     .addTo(controller);
 
+//FÆLLESSKAB SEKTION
+
 const scene4 = new ScrollMagic.Scene({
         triggerElement: "#deltagelse"
 
@@ -81,11 +86,12 @@ const scene4 = new ScrollMagic.Scene({
 const scene5 = new ScrollMagic.Scene({
         triggerElement: "#faellesskab"
 
-    }, "=-2")
+    })
 
     .setTween(tl5)
     .addTo(controller);
 
+//INFOGRAFIK SEKTION
 const scene6 = new ScrollMagic.Scene({
         triggerElement: "#infografik"
 
