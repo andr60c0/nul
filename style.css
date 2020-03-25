@@ -36,7 +36,7 @@ html {
 #faellesskab img,
 #infografik img,
 video {
-    filter: drop-shadow(2px 2px 14px #1C1E1F);
+    filter: drop-shadow(1px 1px 20px #1C1E1F);
 }
 
 #om,
@@ -74,7 +74,7 @@ button {
     font-style: normal;
     font-weight: 200;
     font-size: .8rem;
-    filter: drop-shadow(2px 2px 8px #9C9E9F);
+    /*    filter: drop-shadow(2px 2px 8px #9C9E9F);*/
 
 
 
@@ -105,7 +105,7 @@ h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 1.2rem;
-    filter: drop-shadow(2px 2px 8px #D9D8D8);
+    /*    filter: drop-shadow(2px 2px 8px #D9D8D8);*/
 
 
 
@@ -857,7 +857,7 @@ ul {
     /*Web FÆLLESSKAB sektion start */
     #faellesskab .col {
         flex-grow: 1;
-        flex-basis: 600px;
+        flex-basis: 700px;
     }
 
     #faellesskab img {
